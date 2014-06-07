@@ -1,0 +1,112 @@
+GameInterface
+{
+	container Panel(GreenBackground)
+	{
+		material     Core/StatsBlockCenter
+		metrics_mode pixels
+		top          0
+		left         0
+		width        1024
+		height       60
+
+		element Panel(HealthBar)
+		{
+			material     GameInterface/HealthBar
+			metrics_mode pixels
+			top          12
+			left         12
+			width        150
+			height       12
+		}
+		
+		element Panel(ShieldBar)
+		{
+			material     GameInterface/ShieldBar
+			metrics_mode pixels
+			top          24
+			left         12
+			width        150
+			height       12
+		}
+		
+		element TextArea(ScoreText)
+		{
+			metrics_mode  pixels
+			left          512
+			top           6
+			font_name     BlueHighway
+			char_height   30
+			alignment     center
+			colour        1 0 0
+		}
+
+
+				element TextArea(TimerText)
+		{
+			metrics_mode  pixels
+			left          512
+			top           30
+			font_name     BlueHighway
+			char_height   30
+			alignment     center
+			colour        1 0 0
+		}
+
+			
+		
+	}
+	container Panel(GameMessage)
+	{
+		material     Core/StatsBlockCenter
+		metrics_mode pixels
+		top          200
+		left         0
+		width        1024
+		height       200
+
+			element TextArea(GameOver)
+		{
+			metrics_mode  pixels
+			left          0
+			top           10
+			font_name     BlueHighway
+			char_height   70
+			alignment     center
+			colour        1 0 0
+		}
+
+			element TextArea(ScoreGameOver)
+		{
+			metrics_mode  pixels
+			left          0
+			top           80
+			font_name     BlueHighway
+			char_height   70
+			alignment     center
+			colour        1 0 0
+		}
+
+
+				element TextArea(LevelCompleted)
+		{
+			metrics_mode  pixels
+			left          0
+			top           10
+			font_name     BlueHighway
+			char_height   70
+			alignment     center
+			colour        1 0 0
+		}
+
+			element TextArea(NewLevel)
+		{
+			metrics_mode  pixels
+			left          0
+			top           80
+			font_name     BlueHighway
+			char_height   70
+			alignment     center
+			colour        1 0 0
+		}
+		}
+}

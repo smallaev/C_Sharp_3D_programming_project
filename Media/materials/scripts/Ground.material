@@ -1,0 +1,27 @@
+material Ground
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Dirt.jpg
+			}
+		}
+	}
+}
+
+material Wall
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture wall.jpg
+			}
+		}
+	}
+}
